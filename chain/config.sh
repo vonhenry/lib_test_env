@@ -52,6 +52,11 @@ contracts-console = true
 p2p-max-nodes-per-host = 50
 max-clients = 50
 p2p-peer-address = localhost:9777
+p2p-peer-address = localhost:9805
+p2p-peer-address = localhost:9810
+p2p-peer-address = localhost:9815
+p2p-peer-address = localhost:9820
+p2p-peer-address = localhost:9825
 EOF
 
 

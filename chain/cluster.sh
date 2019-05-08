@@ -15,7 +15,8 @@ cluster_init(){
 
     now=`date -u +%Y-%m-%dT%H:%M:%S.000`
     sed 's/"initial_timestamp": ".*/"initial_timestamp": "'$now'",/g' ./config.sh >  ./config_gen.sh
-    . config_gen.sh && rm config_gen.sh
+    . config_gen.sh
+    rm config_gen.sh
 
     cName=config.ini
     lName=logging.json
