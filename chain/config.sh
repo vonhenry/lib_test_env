@@ -27,14 +27,14 @@ read -d '' genesis << EOF
 EOF
 
 read -d '' configbios << EOF
-p2p-server-address = localhost:9876
+p2p-server-address = localhost:9777
 plugin = eosio::producer_plugin
 plugin = eosio::chain_api_plugin
 plugin = eosio::net_plugin
 plugin = eosio::history_api_plugin
 http-server-address = 127.0.0.1:8888
 blocks-dir = blocks
-p2p-listen-endpoint = 0.0.0.0:9876
+p2p-listen-endpoint = 0.0.0.0:9777
 allowed-connection = any
 signature-provider = EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV=KEY:5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 p2p-max-nodes-per-host = 50
@@ -51,7 +51,7 @@ max-transaction-time = 500
 contracts-console = true
 p2p-max-nodes-per-host = 50
 max-clients = 50
-p2p-peer-address = localhost:9876
+p2p-peer-address = localhost:9777
 EOF
 
 
