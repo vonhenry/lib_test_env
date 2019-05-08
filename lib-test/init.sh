@@ -5,7 +5,7 @@
 start_keosd(){
     killall keosd 2>/dev/null
     rm -rf ${WALLET_DIR}
-    mkdir ${WALLET_DIR}
+    mkdir -p ${WALLET_DIR}
     nohup keosd --wallet-dir ${WALLET_DIR} --unlock-timeout 90000 1>/dev/null  2>/dev/null &
 }
 start_keosd
