@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. init.sh
+. env.sh
 
 cluster_init(){
     cluster_clear 2>/dev/null
