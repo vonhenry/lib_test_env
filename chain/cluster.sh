@@ -38,11 +38,11 @@ cluster_init(){
 }
 
 pnodes=1
-total_nodes=5
+total_nodes=25
 delay=0 # 0 or 1 second
 
 cluster_start(){
-    $eosio_launcher -p $pnodes -n $total_nodes --nogen -d $delay --nodeos " "
+    $eosio_launcher -p $pnodes -n $total_nodes --nogen -d $delay --nodeos "--max-transaction-time 1000"
     echo "tail -f ./var/lib/node_00/stderr.txt" # watch log
 }
 

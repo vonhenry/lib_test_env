@@ -1,0 +1,67 @@
+{
+  "schedule": [{
+      "producer_name": "defproducera",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerb",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerc",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerd",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducere",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerf",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerg",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerh",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproduceri",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerj",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerk",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerl",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerm",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducern",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducero",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerp",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerq",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducerr",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducers",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproducert",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    },{
+      "producer_name": "defproduceru",
+      "block_signing_key": "EOS89UKrtQ2HDsbiSeJLyjiNej8a6XpEzgtfk6XS1HrY2KX6jh5aL"
+    }
+  ]
+}
