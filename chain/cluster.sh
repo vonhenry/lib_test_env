@@ -17,7 +17,6 @@ cluster_init(){
     sed 's/"initial_timestamp": ".*/"initial_timestamp": "'$now'",/g' ./config.sh >  ./config_gen.sh
     . config_gen.sh && rm config_gen.sh
 
-
     cName=config.ini
     lName=logging.json
     gName=genesis.json
@@ -56,10 +55,12 @@ cluster_clear(){
 }
 
 cluster_down(){
+    if [ "$1" == "" ]; then echo "no argument is provided" && return; fi
     $eosio_launcher  --network-name node_  --nodes ${total_nodes}  --down $@  1>/dev/null
 }
 
 cluster_up(){
+    if [ "$1" == "" ]; then echo "no argument is provided" && return; fi
     $eosio_launcher  --network-name node_  --nodes ${total_nodes}  --bounce $@  1>/dev/null
 }
 
@@ -74,6 +75,7 @@ cluster_check(){
 }
 
 watch_log(){
+    if [ "$1" == "" ]; then echo "no argument is provided" && return; fi
     num=$1
     if [ $1 -lt 10 ]; then num=0$1; fi
     tail -f ./var/lib/node_${num}/stderr.txt
@@ -88,5 +90,13 @@ in
     "check" )   cluster_check;;
     "log"   )   shift && watch_log $@;;
     "clear" )   cluster_clear;;
-    *) echo "usage: cluster.sh init|start|down|up|check|log|clear" ;;
+    *) echo "usage: cluster.sh command [arg]
+commands:
+    init        initialize the environment
+    start       start the blockchain
+    down arg    comma-separated list of node numbers, taken down nodes
+    up arg      comma-separated list of node numbers, bounce up nodes
+    check       check nodes status
+    log arg     node number, watch log of one node
+    clear       clear environment " ;;
 esac
