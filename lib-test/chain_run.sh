@@ -17,7 +17,7 @@ create_register_producers(){
         sfx=${bunch}${i}
         bpname=producer11${sfx} && create_one ${bpname}
         var=p${sfx}_pri && import_key ${!var}
-        var=p${sfx}_pub && ${cleos} system regproducer ${bpname} ${!var} http://${bpname}.io
+        var=p${sfx}_pub && ${cleos} system regproducer ${bpname} ${!var} http://${bpname}.io 8
     done
 }
 create_register_producers 1

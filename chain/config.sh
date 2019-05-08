@@ -45,11 +45,13 @@ EOF
 
 read -d '' config_common << EOF
 enable-stale-production = true
-p2p-peer-address = localhost:9876
 plugin = eosio::chain_api_plugin
 plugin = eosio::producer_plugin
 max-transaction-time = 500
 contracts-console = true
+p2p-max-nodes-per-host = 50
+max-clients = 50
+p2p-peer-address = localhost:9876
 EOF
 
 
@@ -376,28 +378,6 @@ p2p-listen-endpoint = 0.0.0.0:9851
 producer-name = producer112z
 signature-provider = EOS6Pb6yoVcUryVL7TWbisbdDVa64PmxEt33f1F32ghbiVn2ttPRw=KEY:5JhPyuPoDk8gN3uVpLVXRSRyCxnvrnoBoNq8jzeEVXmWY6D7hLw
 EOF
-
-
-
-#   生成上面配置的脚步
-#
-#	new_keys(){
-#	    str=`cleos create key --to-console`
-#	    pri_key=`echo $str | cut -d' ' -f 3`
-#	    pub_key=`echo $str | cut -d' ' -f 6`
-#	}
-#
-#    generate(){
-#        for i in `seq 10 30`; do
-#            new_keys
-#            echo "read -d '' config${i} << EOF"
-#            echo http-server-address = 127.0.0.1:88${i}
-#            echo p2p-listen-endpoint = 0.0.0.0:98${i}
-#            echo producer-name = producer111
-#            echo signature-provider = $pub_key=KEY:$pri_key
-#            echo EOF
-#        done
-#    }
 
 
 read -d '' logging << EOF
