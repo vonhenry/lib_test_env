@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+ulimit -c unlimited
+
 # According to the source code path on your local host, modify the following environment variables.
 base_dir=/Code/github.com/boscore/bos/build/programs
 nodeos=${base_dir}/nodeos/nodeos
