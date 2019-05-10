@@ -62,7 +62,7 @@ cluster_down(){
 
 cluster_up(){
     if [ "$1" == "" ]; then echo "no argument is provided" && return; fi
-    $eosio_launcher  --network-name node_  --nodes ${total_nodes}  --bounce $@  1>/dev/null
+    $eosio_launcher  --network-name node_  --nodes ${total_nodes} --nodeos "" --bounce $@  1>/dev/null
 }
 
 cluster_check(){
